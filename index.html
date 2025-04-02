@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Client</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body onload="loadProperties()">
+    <header>
+        <h1>Imobiliária Legal</h1>
+        <a class="add" href="/add.html" >Adicionar</a>
+    </header>
+    <div id="property-list">
+    </div>
+
+
+
+    <h1>Editar imovel</h1>
+    <form onsubmit="editProperty(event)">
+        <input type="hidden" name="propertyId" id="propertyId">
+        <label for="">Tipo:</label>
+        <input type="text" name="type" id="type"> <br><br>
+        <label for="">Endereço:</label>
+        <input type="text" name="adress" id="adress"><br><br>
+        <label for="">Quartos:</label>
+        <input type="text" name="rooms" id="rooms"><br><br>
+        <label for="">Tipo:</label>
+        <input type="text" name="property" id="property"><br><br>
+        <button type="submit">Editar</button>
+    </form>
+
+</body>
+<script src="./js/main.js"></script>
+</html>
